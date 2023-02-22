@@ -8,17 +8,11 @@ package exemplos;
  *
  * @author Matheus
  */
-public class CaixaComGenerics<T> {
+public class TesteComGenerics {
     
-    private T coisa;
+    // Se eu não passar o tipo em <> ele vai assumir Object
+    CaixaComGenerics<String> caixaA = new CaixaComGenerics<>();
     
-    public void guardar(T coisa){
-        this.coisa = coisa;
-    }
-    
-    public T abrir(){
-        return this.coisa;
-    }
     
     
 }
